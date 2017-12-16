@@ -5,7 +5,7 @@ RUN apk --update add wget g++ gcc tar zip unzip openssl git
 
 RUN wget https://redirector.gvt1.com/edgedl/go/go$GOLANG_VERSION.linux-amd64.tar.gz
 RUN tar -xzf go$GOLANG_VERSION.linux-amd64.tar.gz -C /usr/local && rm
-go$GOLANG_VERSION.*
+go*
 
 WORKDIR /workspace
 RUN export GOROOT=/usr/local/go \
