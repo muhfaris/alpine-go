@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-ENV GOLANG_VERSION = 1.9.1
+ENV GOLANG_VERSION 1.9.1
 RUN apk --update add wget g++ gcc tar zip unzip
 
 RUN wget https://storage.googleapis.com/golang/$GOLANG_VERSION.linux-amd64.tar.gz
