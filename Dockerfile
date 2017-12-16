@@ -7,6 +7,7 @@ RUN wget https://redirector.gvt1.com/edgedl/go/go$GOLANG_VERSION.linux-amd64.tar
 RUN tar -xzf go$GOLANG_VERSION.linux-amd64.tar.gz -C /usr/local && rm
 go$GOLANG_VERSION.*
 
+WORKDIR /workspace
 RUN export GOROOT=/usr/local/go \
 && export GOBIN=$GOROOT/bin \
 && export PATH=$PATH:$GOBIN \
